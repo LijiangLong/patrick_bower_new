@@ -4,6 +4,7 @@ import pdb
 
 
 fm_obj = FM()
+pdb.set_trace()
 a = fm_obj.localOrganizedLabeledClipsDir
 b = fm_obj.local3DVideosDir
 #fm_obj.downloadAnnotationData('LabeledVideos')
