@@ -11,7 +11,7 @@ class FileManager():
 			self.localMasterDir = os.getenv('HOME') + '/' + 'Temp/CichlidAnalyzer/'
 
 		# Identify cloud directory for rclone
-		self.rcloneRemote = 'cichlidVideo:'
+		self.rcloneRemote = 'd:'
 		# On some computers, the first directory is McGrath, on others it's BioSci-McGrath. Use rclone to figure out which
 		output = subprocess.run(['rclone', 'lsf', self.rcloneRemote], capture_output = True, encoding = 'utf-8')
 		if 'McGrath/' in output.stdout.split():
